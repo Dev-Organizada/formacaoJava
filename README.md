@@ -1,6 +1,6 @@
 # Formação Java
 
-<h2> Curso da Formação Java da Alura </h2>
+<h2> Curso da Formação Java da Alura 💻</h2>
 
 <h3>Lista dos cursos dentro da Formação: </h3>
 <ol>
