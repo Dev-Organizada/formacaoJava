@@ -2,9 +2,9 @@ package bancoBack_composto;
 
 public class Conta {
 	private double saldo;
-	int agencia;
-	int numero;
-	Cliente titular;
+	private int agencia;
+	private int numero;
+	private Cliente titular;
 
 	public void deposita(double valor) {
 		saldo += valor;
@@ -38,8 +38,24 @@ public class Conta {
 
 	}
 	
-	public double verificaSaldo() {
+	public Cliente getTitular() {
+		return this.titular;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public double getSaldo() {
 		System.out.println("Saldo disponivel: R$" + this.saldo);
 		return this.saldo;
+	}
+	
+	public int getNumero() {
+		return this.numero;
+	}
+	
+	public void setNumero(int novoNumero) {
+		this.numero = novoNumero;
 	}
 }
