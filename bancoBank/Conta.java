@@ -1,7 +1,7 @@
 package bancoBack_composto;
 
-public class Conta {
-	private double saldo;
+public abstract class Conta {
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -18,17 +18,7 @@ public class Conta {
 		System.out.println("Deposito de R$" + valor + " realizado com sucesso. Novo saldo: R$" + this.saldo);
 	}
 
-	public boolean saca(double valor) {
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
-			System.out.println("Saque realizado com sucesso. Novo saldo da conta: R$" + this.saldo);
-			return true;
-		} else {
-			System.out.println(
-					"Você não possui saldo suficiente para realizar essa operação. Saldo disponivel R$" + this.saldo);
-			return false;
-		}
-	}
+	public abstract boolean saca(double valor);
 
 	public boolean transfere(double valor, Conta destino) {
 		if (this.saldo >= valor) {
