@@ -6,7 +6,7 @@
 <ol>
   <li>Java JRE e JDK: compile e execute o seu programa ✔️</li>
   <li>Java OO: entendendo a Orientação a Objetos ✔️</li>
-  <li>Java Polimorfismo: entenda herança e interfaces</li>
+  <li>Java Polimorfismo: entenda herança e interfaces ✔️</li>
   <li>Java Exceções: aprenda a criar, lançar e controlar exceções</li>
   <li>Java e java.lang: programe com a classe Object e String</li>
   <li>Java e java.util: Coleções, Wrappers e Lambda expressions</li>
